@@ -6,8 +6,8 @@ import { Points, PointMaterial, Preload } from "@react-three/drei";
 // @ts-expect-error
 import * as random from "maath/random/dist/maath-random.esm";
 
-const StarBackground = (props: any) => {
-  const ref: any = useRef();
+const StarBackground = (props: React.ComponentProps<any>) => {
+  const ref: React.RefObject<any>= useRef();
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
