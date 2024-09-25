@@ -1,7 +1,22 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import HeroContent from "../sub/HeroContent";
 
 const Hero = () => {
+  // utils/scrollUtils.ts
+
+ const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+useEffect(() => {
+  scrollToTop();
+}, []);
+
   return (
     <div
       className="relative flex flex-col min-h-screen w-full   "
@@ -20,5 +35,4 @@ const Hero = () => {
   );
 };
 export default Hero;
-
 

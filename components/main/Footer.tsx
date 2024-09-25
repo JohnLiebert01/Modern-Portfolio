@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-[20px] text-[15px] text-center">
-          &copy; John Liebert Inc. All rights reserved
+          &copy; Mohammed.J Inc. All rights reserved
         </div>
       </div>
     </div>

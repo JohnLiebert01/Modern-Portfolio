@@ -11,7 +11,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 const SkillText = () => {
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
-      <motion.div
+      {/* <motion.div
         variants={slideInFromTop}
         className="Welcome-box py-2 px-3 sm:py-3 sm:px-4 border border-[#7042f88b] opacity-90 flex items-center"
       >
@@ -19,7 +19,7 @@ const SkillText = () => {
         <h1 className="Welcome-text text-sm sm:text-base">
           Think better with Next js 14
         </h1>
-      </motion.div>
+      </motion.div> */}
       <motion.div
         variants={slideInFromLeft(0.5)}
         className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
