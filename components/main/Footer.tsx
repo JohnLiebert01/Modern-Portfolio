@@ -33,9 +33,7 @@ const Footer = () => {
               <RxGithubLogo />
               <span className="text-[15px] ml-[6px]">Github</span>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Become Sponsor</span>
-            </p>
+           
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <span className="text-[15px] ml-[6px]">Learning about me</span>
             </p>
@@ -48,7 +46,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-[20px] text-[15px] text-center">
-          &copy; John Lieber Inc. All rights reserved
+          &copy; John Liebert Inc. All rights reserved
         </div>
       </div>
     </div>
