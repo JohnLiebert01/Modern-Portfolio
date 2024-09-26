@@ -6,14 +6,17 @@ import StarsCanvas from "@/components/main/StarBackground";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "John - Frontend Portfolio",
-  description: "A brief description of your project.",
+  title: "John ",
+  description: "Portfolio Projects",
   openGraph: {
-    title: "John",
+    title: "John ",
     description: "Portfolio Projects",
     images: [
       {
         url: "https://johnliebert.netlify.app/thumbnail.jpg",
+        width: 1200,
+        height: 630,
+        alt: "John's Portfolio Thumbnail",
       },
     ],
     url: "https://johnliebert.netlify.app/",
@@ -21,7 +24,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "John",
+    title: "John ",
     description: "Portfolio Projects",
     images: ["https://johnliebert.netlify.app/thumbnail.jpg"],
   },
@@ -44,20 +47,33 @@ export default function RootLayout({
   );
 }
 
-
-// import React from "react";
-// import Head from "next";
-// import type { Metadata }from "next";
-// import { Inter } from "next/font/google";
 // import "./globals.css";
+// import React from "react";
+// import { Inter } from "next/font/google";
 // import StarsCanvas from "@/components/main/StarBackground";
-
 
 // const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   title: "John",
-//   description: "Front-end Portfolio",
+// export const metadata = {
+//   title: "John - Frontend Portfolio",
+//   description: "A brief description of your project.",
+//   openGraph: {
+//     title: "John",
+//     description: "Portfolio Projects",
+//     images: [
+//       {
+//         url: "https://johnliebert.netlify.app/thumbnail.jpg",
+//       },
+//     ],
+//     url: "https://johnliebert.netlify.app/",
+//     type: "website",
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "John",
+//     description: "Portfolio Projects",
+//     images: ["https://johnliebert.netlify.app/thumbnail.jpg"],
+//   },
 // };
 
 // export default function RootLayout({
@@ -65,18 +81,13 @@ export default function RootLayout({
 // }: Readonly<{
 //   children: React.ReactNode;
 // }>) {
-
 //   return (
 //     <html lang="en">
-
-     
-
 //       <body
 //         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
 //       >
 //         <StarsCanvas />
 //         {children}
-        
 //       </body>
 //     </html>
 //   );
