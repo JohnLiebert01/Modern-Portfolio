@@ -19,11 +19,9 @@ export default function Home() {
     {/* Open Graph metadata */}
     <meta property="og:title" content="John" />
     <meta property="og:description" content="Portfolio Projects" />
-    <meta property="og:image" content="https://johnliebert.netlify.app//thumbnail.png" />
+    <meta property="og:image" content="https://johnliebert.netlify.app/thumbnail.png" />
     <meta property="og:url" content="https://johnliebert.netlify.app/" />
     <meta property="og:type" content="website" />
-    
-    
   </Head>
       <div className="flex flex-col h-[850px] gap-20">
         <Hero />
