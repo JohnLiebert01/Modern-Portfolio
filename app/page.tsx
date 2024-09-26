@@ -24,7 +24,7 @@ export default function Home() {
     <meta property="og:type" content="website" />
     
     
-  </Head>import Head from 'next/head';
+  </Head>
       <div className="flex flex-col h-[850px] gap-20">
         <Hero />
         <Skills />
