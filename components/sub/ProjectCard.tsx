@@ -1,5 +1,6 @@
-"use client"
+
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -7,100 +8,48 @@ interface Props {
   title: string;
   description: string;
   link: string;
-  onClick?: () => void; // Optional onClick handler
+  technologies: string[];
+  // Update the prop name to be in lowercase and an array of strings
 }
 
-const ProjectCard = ({ src, title, description, link, onClick }: Props) => {
-  const handleCardClick = () => {
-    if (onClick) {
-      onClick(); // Call the custom onClick handler if provided
-    }
-    window.open(link, "_blank", "noopener,noreferrer"); // Open the link in a new tab
-  };
-
+const ProjectCard = ({
+  src,
+  title,
+  description,
+  technologies,
+  link,
+}: Props) => {
   return (
-    <div
-      onClick={handleCardClick}
-      className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] hover:scale-105 transition-transform duration-300 cursor-pointer"
-    >
-      <Image
-        src={src}
-        alt={title}
-        width={1000}
-        height={1000}
-        className="w-full object-contain"
-      />
+    <div className="z-[30] relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
+      <Link href={link} target="_blank">
+        <Image
+          src={src}
+          alt={title}
+          width={1000}
+          height={1000}
+          className="w-full object-contain"
+        />
+
+        <div className="relative p-4">
+          <h1 className="text-2xl font-semibold text-white">{title}</h1>
+          <p className="mt-2 text-gray-300">{description}</p>
+        </div>
+      </Link>
       <div className="relative p-4">
-        <h1 className="text-2xl font-semibold text-white">{title}</h1>
-        <p className="mt-2 text-gray-300">{description}</p>
+        <h1 className="text-md font-semibold text-white">Technologies</h1>
+        <div className="flex flex-wrap gap-2">
+          {technologies.map((technology, index) => (
+            <span
+              key={index}
+              className="mt-2 font-normal text-[14px] text-gray-300 bg-[#2A0E61] py-1 px-2 rounded-full"
+            >
+              {technology}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export default ProjectCard;
-
-
-// import Image from "next/image";
-// import React from "react";
-
-// interface Props {
-//   src: string;
-//   title: string;
-//   description: string;
-//   link: string; // New link prop
-// }
-
-// const ProjectCard = ({ src, title, description, link }: Props) => {
-//   return (
-//     <a href={link} target="_blank" rel="noopener noreferrer" className="block">
-//       <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] hover:scale-105 transition-transform duration-300 cursor-pointer">
-//         <Image
-//           src={src}
-//           alt={title}
-//           width={1000}
-//           height={1000}
-//           className="w-full object-contain"
-//         />
-//         <div className="relative p-4">
-//           <h1 className="text-2xl font-semibold text-white">{title}</h1>
-//           <p className="mt-2 text-gray-300">{description}</p>
-//         </div>
-//       </div>
-//     </a>
-//   );
-// };
-
-// export default ProjectCard;
-
-
-
-// import Image from "next/image";
-// import React from "react";
-
-// interface Props {
-//   src: string;
-//   title: string;
-//   description: string;
-// }
-
-// const ProjectCard = ({ src, title, description }: Props) => {
-//   return (
-//     <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] ">
-//       <Image
-//         src={src}
-//         alt={title}
-//         width={1000}
-//         height={1000}
-//         className="w-full object-contain"
-//       />
-
-//       <div className="relative p-4">
-//         <h1 className="text-2xl font-semibold text-white">{title}</h1>
-//         <p className="mt-2 text-gray-300">{description}</p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ProjectCard;

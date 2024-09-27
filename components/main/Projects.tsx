@@ -1,52 +1,61 @@
-"use client";
+
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
 
+const projectData = [
+  {
+    src: "/brainwave.png",
+    link: "https://brainwave-ai-landing-page.netlify.app/",
+    title: "Brainwave AI",
+    description:
+      "A modern Artificial intelligence Startup landing page For ALL AI services."
+      ,
+    technologies: ["Tailwind CSS", "Javascript", "Typescript", "React.Js"],
+  },
+  // {
+  //   src: "/brainwave.png",
+  //   link: "https://brainwave-ai-landing-page.netlify.app/",
+  //   title: "Travelling CMS Admin Panel",
+  //   description:
+  //     "It is our client's project in it we have to make a content Management system for them. Admin can create Packages and show it on the website for customers.",
+  //   technologies: ["MongoDB", "Express.Js", "React.Js", "Node.Js"],
+  // },
+  // {
+  //   src: "/brainwave.png",
+  //   link: "https://brainwave-ai-landing-page.netlify.app/",
+  //   title: "Inventory Management System",
+  //   description:
+  //     "It is our Hackathon project that we completed with my team Orace.",
+  //   technologies: ["MongoDB", "Express.Js", "React.Js", "Node.Js"],
+  // },
+  // {
+  //   src: "/brainwave.png",
+  //   link: "https://brainwave-ai-landing-page.netlify.app/",
+  //   title: "Galaxy Tour",
+  //   description:
+  //     "It is a Space tour website that gives you a chance to see the whole solar system with animation. It is also providing much information about the planets and popular space organizations (ISRO, NASA, ROSCOSMOS).",
+  //   technologies: ["html", "css", "javaScript"],
+  // }, 
+];
+
 const Projects = () => {
-  const projects = [
-    {
-      src: "/brainwave.png",
-      title: "Brainwave",
-      description: "A modern artificial intelligence startup landing page",
-      link: "https://brainwave-ai-landing-page.netlify.app/",
-    },
-    {
-      src: "/thumbnail.jpg",
-      title: "Interactive Website Cards",
-      description: "Interactive card component for modern websites",
-      link: "https://example.com/interactive-cards",
-    },
-    {
-      src: "/thumbnail.jpg",
-      title: "Space Themed Website",
-      description: "An immersive space-themed website experience",
-      link: "https://example.com/space-themed",
-    },
-  ];
-
-  // Function to handle click events on each card
-  const handleCardClick = (projectTitle: string) => {
-    console.log(`${projectTitle} card clicked!`);
-    // You could add tracking logic or other custom behavior here
-  };
-
   return (
     <div
-      className="flex flex-col items-center justify-center py-20 xl:mt-[-50vh] lg:mt-[-50vh] md:mt-[-70vh] sm:mt-[-40vh] min-[320px]:mt-[-20vh]"
+      className="flex flex-col items-center justify-center py-20"
       id="projects"
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        {projects.map((project, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 px-10">
+        {projectData.map((project, index) => (
           <ProjectCard
             key={index}
             src={project.src}
+            link={project.link}
             title={project.title}
             description={project.description}
-            link={project.link}
-            onClick={() => handleCardClick(project.title)} // Pass onClick handler
+            technologies={project.technologies}
           />
         ))}
       </div>
@@ -55,90 +64,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-// import React from "react";
-// import ProjectCard from "../sub/ProjectCard";
-
-// const Projects = () => {
-//   const projects = [
-//     {
-//       src: "/brainwave.png",
-//       title: "Brainwave",
-//       description: "A modern artificial intelligence startup landing page",
-//       link: "https://brainwave-ai-landing-page.netlify.app/",
-//     },
-//     {
-//       src: "/thumbnail.jpg",
-//       title: "Interactive Website Cards",
-//       description: "Interactive card component for modern websites",
-//       link: "https://example.com/interactive-cards",
-//     },
-//     {
-//       src: "/thumbnail.jpg",
-//       title: "Space Themed Website",
-//       description: "An immersive space-themed website experience",
-//       link: "https://example.com/space-themed",
-//     },
-//   ];
-
-//   return (
-//     <div
-//       className="flex flex-col items-center justify-center py-20 xl:mt-[-50vh] lg:mt-[-50vh] md:mt-[-70vh] sm:mt-[-40vh] min-[320px]:mt-[-20vh]"
-//       id="projects"
-//     >
-//       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-//         My Projects
-//       </h1>
-//       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-//         {projects.map((project, index) => (
-//           <ProjectCard
-//             key={index}
-//             src={project.src}
-//             title={project.title}
-//             description={project.description}
-//             link={project.link} // Pass the link prop here
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Projects;
-
-
-// import React from "react";
-// import ProjectCard from "../sub/ProjectCard";
-
-// const Projects = () => {
-//   return (
-//     <div
-//       className="flex flex-col items-center justify-center py-20 xl:mt-[-50vh] lg:mt-[-50vh] md:mt-[-70vh] sm:mt-[-40vh] min-[320px]:mt-[-20vh]"
-//       id="projects"
-//     >
-//       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-//         My Projects
-//       </h1>
-//       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-//         <ProjectCard
-//           src="/brainwave.png"
-//           title="Brainwave"
-//           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-//         />
-//         <ProjectCard
-//           src="/thumbnail.jpg"
-//           title="Interactive Website Cards"
-//           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-//         />
-//         <ProjectCard
-//           src="/thumbnail.jpg"
-//           title="Space Themed Website"
-//           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Projects;

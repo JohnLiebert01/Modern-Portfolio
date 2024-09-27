@@ -47,12 +47,16 @@ const HeroContent = () => {
           and projects.
         </motion.p>
 
-        {/* <motion.a
+        <motion.a
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[180px] sm:max-w-[200px] bg-purple-600 hover:bg-purple-700 transition-colors"
+          className="py-3 px-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[280px] sm:max-w-[220px] bg-purple-600 hover:bg-purple-700 transition-colors"
+          href="/John_Liebert_-_Software_Developer.pdf"
+          download="John_Liebert_-_Software_Developer.pdf"
         >
-          Learn More!
-        </motion.a> */}
+          Download CV
+        </motion.a>
+
+  
       </div>
     </motion.div>
   );
