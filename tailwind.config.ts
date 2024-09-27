@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        xs: '350px',  // For 290px to 350px
+        sm: '500px',  // For 351px to 500px
+      },
     
     },
   },

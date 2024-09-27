@@ -10,9 +10,9 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col md:flex-row items-center justify-center min-h-[100vh] px-4 sm:px-8 md:px-20 mt-16 sm:mt-16 md:mt-24 lg:mt-0 w-full z-[20]"
+      className=" hero-content flex flex-col md:flex-row items-center justify-center min-h-[100vh] px-4  sm:px-8 md:px-20 mt-16 sm:mt-16 md:mt-24 lg:mt-0 w-full z-[20] "
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center items-center text-center md:text-start md:items-start m-auto">
+      <div className="h-full w-full flex flex-col gap-5 justify-center items-center text-center md:text-start md:items-start m-auto ">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-2 px-3 sm:py-3 sm:px-4 border border-[#7042f88b] opacity-90 flex items-center"
