@@ -41,9 +41,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-sm sm:text-base md:text-lg text-gray-400 my-5 max-w-[90%] sm:max-w-[600px]"
         >
-          I&apos;m a Front end developer with experience of more than two
-          years , a Web Front-End developer with graphic design skills.Im also a
-          3rd stage student at the university of technology Check out my skills
+          Hi I&apos;m Mohammed Jalal , a Web Front-End Developer With Knowledge of Animation And Graphic design skills ,
+          Im also a
+          Third Stage Student at the University of Technology Check out my skills
           and projects.
         </motion.p>
 
