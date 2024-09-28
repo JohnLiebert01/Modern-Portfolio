@@ -19,7 +19,7 @@ const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-2 h-5 w-5" />
           <h1 className="Welcome-text text-sm sm:text-base">
-            Front-end Developer Portfolio
+            Front-End Developer Portfolio
           </h1>
         </motion.div>
 
@@ -41,8 +41,8 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-sm sm:text-base md:text-lg text-gray-400 my-5 max-w-[90%] sm:max-w-[600px]"
         >
-          Hi I&apos;m Mohammed Jalal , a Web Front-End Developer With Knowledge of Animation And Graphic design skills ,
-          Im also a
+          Hi, I&apos;m Mohammed Jalal , A Web Front-End Developer With Knowledge of Animation And Graphic design skills ,
+          I&apos;m also a
           Third Stage Student at the University of Technology Check out my skills
           and projects.
         </motion.p>
