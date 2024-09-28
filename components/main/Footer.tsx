@@ -61,7 +61,7 @@ const Footer = () => {
               <RxLinkedinLogo />
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/john-liebert/?trk=public-profile-join-page"
+                href="https://www.linkedin.com/in/mohammed202-jalal"
                 className="text-[15px] ml-[6px]"
               >
                 Linkedin
@@ -76,14 +76,14 @@ const Footer = () => {
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <span className="text-[15px] ml-[6px]">
-              johnlieber01.io@gmail.com
+              aooful333@gmail.com
               </span>
             </p>
           </div>
         </div>
 
         <div className="mb-[20px] text-[15px] text-center">
-        &copy; John Liebert Inc. All rights reserved
+        &copy; MOHAMMED JALAL Inc. All rights reserved
         </div>
       </div>
     </div>

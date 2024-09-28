@@ -6,17 +6,17 @@ import StarsCanvas from "@/components/main/StarBackground";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "John ",
+  title: "Mohammed.J ",
   description: "Portfolio Projects",
   openGraph: {
-    title: "John ",
+    title: "Mohammed.J  ",
     description: "Portfolio Projects",
     images: [
       {
         url: "https://johnliebert.netlify.app/thumbnail.jpg",
         width: 1200,
         height: 630,
-        alt: "John's Portfolio Thumbnail",
+        alt: "Mohammed's Portfolio Thumbnail",
       },
     ],
     url: "https://johnliebert.netlify.app/",
@@ -24,7 +24,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "John ",
+    title: "Mohammed.J  ",
     description: "Portfolio Projects",
     images: ["https://johnliebert.netlify.app/thumbnail.jpg"],
   },
