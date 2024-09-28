@@ -50,8 +50,8 @@ const HeroContent = () => {
         <motion.a
           variants={slideInFromLeft(1)}
           className="py-3 px-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[280px] sm:max-w-[220px] bg-purple-600 hover:bg-purple-700 transition-colors"
-          href="/John_Liebert_-_Software_Developer.pdf"
-          download="John_Liebert_-_Software_Developer.pdf"
+          href="/MOHAMMED_JALAL_-_Software_Developer.pdf"
+          download="MOHAMMED_JALAL_-_Software_Developer.pdf"
         >
           Download CV
         </motion.a>
